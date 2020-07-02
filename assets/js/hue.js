@@ -1,4 +1,4 @@
-var rootUrl = "http://mbtaylor.ngrok.io";
+var rootUrl = "https://mbtaylor.ngrok.io";
 
 function tooManyRequestsErrorMessage()
 {
