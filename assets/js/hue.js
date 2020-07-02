@@ -1,3 +1,5 @@
+var rootUrl = "http://mbtaylor.ngrok.io";
+
 function tooManyRequestsErrorMessage()
 {
 	return "The website is currently experiencing high amounts of traffic and some commands may not go through. Please come back later.";
@@ -8,7 +10,7 @@ function brightness(brightness)
 	$.ajax({
 	    type: "POST",
 	    data:{csrfmiddlewaretoken: window.CSRF_TOKEN, 'brightness':brightness},
-	    url: "/brightness", 
+	    url: rootUrl + "/brightness", 
 	    success : function(data) {
 
 	     },
@@ -25,7 +27,7 @@ function brightnessUp()
 	$.ajax({
 	    type: "POST",
 	    data: {csrfmiddlewaretoken: window.CSRF_TOKEN},
-	    url: "/brightnessUp", 
+	    url: rootUrl + "/brightnessUp", 
 	    success : function(data) {
 
 	     },
@@ -42,7 +44,7 @@ function brightnessDown()
 	$.ajax({
 	    type: "POST",
 	    data: {csrfmiddlewaretoken: window.CSRF_TOKEN},
-	    url: "/brightnessDown", 
+	    url: rootUrl + "/brightnessDown", 
 	    success : function(data) {
 
 	     },
@@ -59,7 +61,7 @@ function lightsOff()
 	$.ajax({
 	    type: "POST",
 	    data: {csrfmiddlewaretoken: window.CSRF_TOKEN},
-	    url: "/lightsOff", 
+	    url: rootUrl + "/lightsOff", 
 	    success : function(data) {
 
 	     },
@@ -76,7 +78,7 @@ function lightsOn()
 	$.ajax({
 	    type: "POST",
 	    data: {csrfmiddlewaretoken: window.CSRF_TOKEN},
-	    url: "/lightsOn", 
+	    url: rootUrl + "/lightsOn", 
 	    success : function(data) {
 
 	     },
@@ -93,7 +95,7 @@ function randomColor()
 	$.ajax({
 	    type: "POST",
 	    data: {csrfmiddlewaretoken: window.CSRF_TOKEN},
-	    url: "/randomColor", 
+	    url: rootUrl + "/randomColor", 
 	    success : function(data) {
 
 	     },
@@ -114,7 +116,7 @@ function changeColor(red, green, blue)
 	$.ajax({
 	    type: "POST",
 	    data:{'x':x, 'y':y, csrfmiddlewaretoken: window.CSRF_TOKEN, },
-	    url: "/changeColor", 
+	    url: rootUrl + "/changeColor", 
 	    success : function(data) {
 
 	     },
@@ -131,7 +133,7 @@ function changeWhite()
 	$.ajax({
 	    type: "POST",
 	    data: {csrfmiddlewaretoken: window.CSRF_TOKEN},
-	    url: "/changeWhite", 
+	    url: rootUrl + "/changeWhite", 
 	    success : function(data) {
 
 	     },
