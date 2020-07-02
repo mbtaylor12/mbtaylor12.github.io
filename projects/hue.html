@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>mbtaylor | Game of Memes</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+		<script src="/assets/js/jquery.min.js"></script>
+		<script src="/assets/js/hue.js"></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="/index.html" class="title">Michael B Taylor</a>
+				<nav>
+					<ul>
+						<li><a href="/index.html">Home</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Control My Lights!</h1>
+							<span class="image fit"><img src="http://cam1.mbtaylor.net/?action=stream" style="max-width: 100%;" /></span>
+							<p>
+								<img src="/images/rgbremote.png" usemap="#image-map" />
+								<br />
+								On the left is a livestream of my room and on the right is a remote that you can click to manipulate my light bulbs. Depending on your internet speed, the livestream may take some time to update. There is a spam filter if you make too many change requests.
+								<br />
+								<br />
+								This project was built using the Python library phue and a Raspberry Pi Zero as a self-contained wireless camera.
+							</p>
+						</div>
+					</section>
+					<map name="image-map">
+						<area onclick="lightsOn();  return false;" target="_self" alt="ON" title="ON" href="#" coords="239,7,186,60" shape="rect">
+					    <area onclick="lightsOff();  return false;" target="_self" alt="OFF" title="OFF" href="#" coords="128,7,180,60" shape="rect">
+					    <area onclick="brightnessUp();  return false;" target="_self" alt="BRIGHTNESS-UP" title="BRIGHTNESS-UP" href="#" coords="68,7,121,60" shape="rect">
+					    <area onclick="brightnessDown();  return false;" target="_self" alt="BRIGHTNESS-DOWN" title="BRIGHTNESS-DOWN" href="#" coords="8,7,61,60" shape="rect">
+					    <area onclick="changeColor(255, 0, 0); return false;" target="_self" alt="RED" title="RED" href="#" coords="8,72,61,125" shape="rect">
+					    <area onclick="changeColor(0, 255, 0);  return false;" target="_self" alt="GREEN" title="GREEN" href="#" coords="68,72,121,125" shape="rect">
+					    <area onclick="changeColor(0, 0, 255);  return false;" target="_self" alt="BLUE" title="BLUE" href="#" coords="127,72,181,125" shape="rect">
+					    <area onclick="changeColor(255, 148, 148);  return false;" target="_self" alt="PINK" title="PINK" href="#" coords="186,72,239,125" shape="rect">
+					    <area onclick="changeColor(255, 79, 0);  return false;" target="_self" alt="ORANGE" title="ORANGE" href="#" coords="8,137,61,190" shape="rect">
+					    <area onclick="changeColor(174, 255, 0);  return false;" target="_self" alt="LIME" title="LIME" href="#" coords="68,137,121,190" shape="rect">
+					    <area onclick="changeColor(0, 246, 255);  return false;" target="_self" alt="SKY" title="SKY" href="#" coords="127,137,180,190" shape="rect">
+					    <area onclick="changeColor(201, 255, 148);  return false;" target="_self" alt="GRASS" title="GRASS" href="#" coords="186,137,239,190" shape="rect">
+					    <area onclick="changeColor(255, 174, 0);  return false;" target="_self" alt="GOLD" title="GOLD" href="#" coords="8,202,61,254" shape="rect">
+					    <area onclick="changeColor(0, 255, 156);  return false;" target="_self" alt="MINT" title="MINT" href="#" coords="68,202,121,254" shape="rect">
+					    <area onclick="changeColor(102, 0, 255);  return false;" target="_self" alt="PURPLE" title="PURPLE" href="#" coords="127,202,180,254" shape="rect">
+					    <area onclick="randomColor();  return false;" target="_self" alt="RAND" title="RAND" href="#" coords="186,202,239,254" shape="rect">
+					    <area onclick="changeColor(246, 255, 0);  return false;" target="_self" alt="YELLOW" title="YELLOW" href="#" coords="8,265,61,318" shape="rect">
+					    <area onclick="changeColor(0, 205, 106);  return false;" target="_self" alt="DARK GREEN" title="DARK GREEN" href="#" coords="68,265,121,318" shape="rect">
+					    <area onclick="changeColor(246, 0, 255);  return false;" target="_self" alt="MAGENTA" title="MAGENTA" href="#" coords="127,265,180,318" shape="rect">
+					    <area onclick="changeWhite();  return false;" target="_self" alt="WHITE" title="WHITE" href="#" coords="186,265,239,318" shape="rect">
+					</map>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; mbtaylor.net. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
