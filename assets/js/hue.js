@@ -94,7 +94,7 @@ function randomColor()
 {
 	$.ajax({
 	    type: "POST",
-	    data: {csrfmiddlewaretoken: window.CSRF_TOKEN},
+	    data: {},
 	    url: rootUrl + "/randomColor", 
 	    success : function(data) {
 

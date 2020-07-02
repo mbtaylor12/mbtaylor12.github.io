@@ -2987,6 +2987,12 @@ input, select, textarea {
 
 /* Spotlights */
 
+	.spotlight {
+		border-top: solid;
+		border-width: 7px;
+		border-color: #242424;
+	}
+
 	.spotlights > section {
 		display: -moz-flex;
 		display: -webkit-flex;
